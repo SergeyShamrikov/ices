@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!-- Basic page needs
+        ============================================ -->
+        <title>Tasks page</title>
+        <meta charset="utf-8">
+        <meta name="author" content="">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+
+        <!-- Mobile specific metas
+        ============================================ -->
+        <meta name="viewport" content="width=1280">
+
+
+        <!-- Libs CSS
+        ============================================ -->
+        <link rel="stylesheet" href="plugins/FormStyler/jquery.formstyler.css">
+
+        
+
+        <!-- Favicon
+        ============================================ -->
+        <!-- <link rel="shortcut icon" type="images/x-icon" href="images/fav_icon.ico"> -->
+
+        <!-- Theme CSS
+        ============================================ -->
+        <!-- <link rel="stylesheet" href="css/se.css"> -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Media Queries CSS
+        ============================================ -->
+        <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+
+        <!-- Old IE 
+        ============================================ -->
+
+        <!--[if lt IE 8]>
+        <div style=' clear: both; text-align:center; position: relative;'>
+          <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+            <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+          </a>
+        </div>
+        <![endif]-->
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="js/html5.js"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+        <![endif]-->
+
+
+    </head>
+
+    <body>
+
+        <div class="page_wrap">
+
+            <!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->
+            
+            <header id="header">
+                
+
+                <div class="header_box clearfix">                 
+                    
+                   
+                    <ul id="top_menu" class="clearfix">
+                        <li><a href="javascript:;"><i class="fa fa-bell-o" aria-hidden="true"></i> <span>8</span></a></li>
+                        <li class="current"><a href="javascript:;"><i class="fa fa-commenting-o" aria-hidden="true"></i><span>3</span></a></li>
+                    </ul>
+
+                    <form class="search" action="">
+                        
+                        <input type="text" value="" placeholder="Поиск" />
+                        <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                        
+                    </form>
+                    
+                    <div class="custom_dropdown_box alignright custom_dropdown_right">
+                        
+                        <div class="custom_dropdown_btn"><span class="icon_plus"><i class="fa fa-plus"></i></span>Новое поручение<span class="icon_down"><i class="fa fa-caret-down" aria-hidden="true"></i></span></div>
+                    
+                        <ul class="custom_dropdown">
+                            
+                            <li>
+                                <a href="javascript:;"><img src="images/icon_1.png" alt="" class="custom_dropdown_icon">Создать проект</a>
+                            </li>
+                        
+                            <li>
+                                <a href="javascript:;"><img src="images/icon_2.png" alt="" class="custom_dropdown_icon">Создать подраздел проекта</a>
+                            </li>
+                        
+                            <li>
+                                <a href="javascript:;"><img src="images/icon_3.png" alt="" class="custom_dropdown_icon">Создать группу задач</a>
+                            </li>
+                        
+                            <li>
+                                <a href="javascript:;"><img src="images/icon_4.png" alt="" class="custom_dropdown_icon">Создать задачу</a>
+                            </li>
+                        
+                            <li>
+                                <a href="javascript:;"><img src="images/icon_5.png" alt="" class="custom_dropdown_icon">Создать задание смежному отделу</a>
+                            </li>
+                        
+                        </ul>
+                    
+                    </div>
+
+
+
+                </div>
+
+            </header>
+             
+            <!-- - - - - - - - - - - - - - Left Menu - - - - - - - - - - - - - - - - -->
+        
+            <div class="left_nav">
+                    
+                <div class="menu_toggle">
+
+                    <!-- - - - - - - - - - - - - - Logo - - - - - - - - - - - - - - - - -->
+            
+                    <div class="logo">
+                        <a href="index.html" title="Home Page">
+                            HomeStyle
+                        </a>
+                    </div>
+                     
+                    <!-- - - - - - - - - - - - - - End of Logo - - - - - - - - - - - - - - - - -->
+
+                    <a href="javascript:;" class="btn_menu_toggle">
+                        <i class="fa fa-outdent s" aria-hidden="true"></i>
+                        <i class="fa fa-indent h" aria-hidden="true"></i>
+                    </a>
+                    
+                </div>
+
+                <div class="user_box">
+
+                    <div class="work_people clearfix">
+                        <div class="work_people_ava">
+                            <img src="images/ava_work_people_1.png" width="40" height="40" alt="">
+                        </div>
+                        <div class="work_people_cont">
+                            <p>Мирошник Елена</p>
+                            <p><span>ГИП</span></p>
+                            <ul class="user_settings">
+                                <li>
+                                    <a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <ul id="left_menu" class="left_menu">
+                    
+                    <li>
+                        <a href="javascript:;"><i class="fa fa-tachometer" aria-hidden="true"></i><span>Личный кабинет <em class="icon_chevron"><i class="fa fa-chevron-right s" aria-hidden="true"></i><i class="fa fa-chevron-down h" aria-hidden="true"></i></em></span> </a>
+
+                        <ul class="list_circle">
+                            <li><a href=""><span style="border-color: #85c875;"></span>Поручения</a></li>
+                            <li><a href=""><span style="border-color: #0bc4df;"></span>Задачи</a></li>
+                            <li><a href=""><span style="border-color: #f1a80a;"></span>Документы</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="active">
+                        <a href="javascript:;"><i class="fa fa-desktop" aria-hidden="true"></i><span>Проекты <em class="icon_chevron"><i class="fa fa-chevron-right s" aria-hidden="true"></i><i class="fa fa-chevron-down h" aria-hidden="true"></i></em></span></a>
+
+                        <ul class="list_circle" style="display: block;">
+                            <li><a href=""><span style="border-color: #85c875;"></span>Проекты</a></li>
+                            <li><a href=""><span style="border-color: #0bc4df;"></span>Задачи</a></li>
+                            <li><a href=""><span style="border-color: #f1a80a;"></span>Поручения</a></li>
+                            <li><a href=""><span style="border-color: #5a6b82;"></span>Документы</a></li>
+                            <li><a href=""><span style="border-color: #448ccb;"></span>Календарь</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><!-- <i class="fa fa-usd" aria-hidden="true"></i> --><i class="fa fa-money" aria-hidden="true"></i><span>Ресурсы</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><i class="fa fa-line-chart" aria-hidden="true"></i><!-- <i class="fa fa-area-chart" aria-hidden="true"></i> --><span>Бизнес-процессы</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><i class="fa fa-folder-open" aria-hidden="true"></i><span>Документооборот</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><i class="fa fa-cogs" aria-hidden="true"></i><span>Настройки</span></a>
+                    </li>
+                    
+                </ul>
+            </div>
+    
+            <!-- - - - - - - - - - - - - - End of Left Menu - - - - - - - - - - - - - - - - -->
+        
+            
+            <!-- - - - - - - - - - - - - - End of Header - - - - - - - - - - - - - - - - -->
+            
+            <!-- - - - - - - - - - - - - - Content - - - - - - - - - - - - - - - - -->
+            
+            <main id="content">
+
+                
+                <div class="way">
+                    <a href="">проект</a>   <span>/</span>    дом 42
+                </div>
+
+
+                    
+                <div class="work_box">
+                    <h3 class="dark_bg"><i class="fa fa-wpforms" aria-hidden="true"></i>создать проект</h3>
+
+                    <div class="work_box_cont">
+
+                        <div class="two_cell_lg_wr">
+
+                            <div class="two_cell_lg_in clearfix">
+                                <div class="two_cell_lg">
+
+
+                                    <!-- - - - - - - - - - - - - - Form Block 1 - - - - - - - - - - - - - - - - -->
+                            
+                                    <div class="form_block">
+                            
+                                        <fieldset>
+                                        
+                                            <legend>Основная информация</legend>
+
+                                            <div class="form_row">
+                                                
+                                                <div class="label_col_1">
+                                                    <label>Название<i>*</i></label>
+                                                </div>
+
+                                                <div class="input_box1">
+                                                    <input type="text" placeholder="Название проекта">
+                                                </div>
+
+                                            </div>
+                                        
+                                            <div class="form_row">
+                                                
+                                                <div class="label_col_1">
+                                                    <label>Номер<i>*</i></label>
+                                                </div>
+
+                                                <div class="input_box2">
+                                                    <input type="text" placeholder="ОХ19023883">
+                                                </div>
+
+                                                <div class="label_col_1">
+                                                    <label>Дата начала</label>
+                                                </div>
+
+                                                <div class="input_box2">
+                                                    <input type="text" placeholder="21.11.2016">
+                                                </div>
+
+
+                                            </div>
+                                        
+                                            <div class="form_row">
+
+                                                <div class="label_col_1">
+                                                    <label>Инв. номер<i>*</i></label>
+                                                </div>
+
+                                                <div class="input_box2">
+                                                    <input type="text" placeholder="ОХ19023883">
+                                                </div>
+
+                                                <div class="label_col_1">
+                                                    <label>Дата окончания</label>
+                                                </div>
+
+                                                <div class="input_box2">
+                                                    <input type="text" placeholder="21.11.2016">
+                                                </div>
+
+                                            </div>
+                                        
+                                        </fieldset>
+                            
+                                        <fieldset>
+                                        
+                                            <legend>Данные об объекте</legend>
+
+                                            <div class="form_row">
+                                                
+                                                <div class="label_col_1">
+                                                    <label>Тип данных</label>
+                                                </div>
+
+                                                <div class="input_box1">
+                                                    <input type="text">
+                                                </div>
+
+                                            </div>
+                                            
+                                            <!-- - - - - - - - - - - - - - Form Template - - - - - - - - - - - - - - - - -->
+
+                                            <div class="form_template" data-template='2'>
+                                                                                                
+                                            
+                                            </div>
+
+                                            <!-- - - - - - - - - - - - - - End of Form Template - - - - - - - - - - - - - - - - -->
+                                            
+                                            <div class="form_row button_row">
+
+                                                <div class="btn_plus add_form_btn alignleft"><span class="icon_plus"><i class="fa fa-plus"></i></span>Добавить параметр</div>
+
+                                                <div class="btn_plus add_form_btn alignright"><span class="icon_plus"><i class="fa fa-plus"></i></span>Добавить тип</div>
+                                            
+                                            </div>
+
+
+                                   
+                                        </fieldset>
+
+                                        <!-- <fieldset>
+                                        
+                                            <div class="form_template" data-template='4'></div>
+
+
+                                            <div class="form_row button_row">
+
+                                                <div class="btn_plus add_form_btn alignright"><span class="icon_plus"><i class="fa fa-plus"></i></span>Добавить тип</div>
+                                            
+                                            </div>
+
+                                   
+                                        </fieldset> -->
+
+                                        <fieldset>
+                                        
+
+                                            
+                                            <!-- - - - - - - - - - - - - - Form Template - - - - - - - - - - - - - - - - -->
+
+                                            <legend>Загрузка файлов</legend>
+
+                                            <!-- - - - - - - - - - - - - - End of Form Template - - - - - - - - - - - - - - - - -->
+                                            
+
+                                            <div class="form_row">
+
+                                                <div class="label_col_2">
+                                                    <label>Загрузить картинку</label>
+                                                </div>
+
+                                                <div class="input_box3">
+                                                    <input type="file" class="file_img" />
+                                                </div>
+
+                                            </div>
+
+                                            <div class="form_row">
+
+                                                <div class="label_col_2">
+                                                    <label>Прикрепить документ</label>
+                                                </div>
+
+                                                <div class="input_box3">
+                                                    <input type="file" class="file_doc"/>
+                                                </div>
+
+                                            </div>
+
+                                   
+                                        </fieldset>
+                            
+                                    </div>
+
+
+                                    <!-- - - - - - - - - - - - - - End of Form Block 1 - - - - - - - - - - - - - - - - -->
+                                </div>
+                                
+                                <div class="two_cell_lg">
+                                    <fieldset>
+
+                                        <div class="form_block">
+                                        
+                                            <legend>Информация о заказчике</legend>
+
+                                            <div class="form_row">
+                                                
+                                                <div class="label_col_1">
+                                                    <label>Заказчик проекта<i>*</i></label>
+                                                </div>
+
+                                                <div class="input_box1">
+                                                    <select data-placeholder='Выберите заказчика'>
+                                                        <option value=""></option>
+                                                        <option value="Заказчик 1">Заказчик 1</option>
+                                                        <option value="Заказчик 2">Заказчик 2</option>
+                                                        <option value="Заказчик 3">Заказчик 3</option>
+                                                        <option value="Заказчик 4">Заказчик 4</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+
+                                            <!-- - - - - - - - - - - - - - Form Template - - - - - - - - - - - - - - - - -->
+                                        
+                                            <div class="form_template" data-template='1'>
+                                                
+                                                <div class="form_row">
+                                                    
+                                                    <div class="label_col_1">
+                                                        <label>ФИО контакт. лица<i>*</i></label>
+                                                    </div>
+                                                
+                                                    <div class="input_box1">
+                                                        <input type="text" placeholder="Иван Александрович Петров">
+                                                    </div>
+                                                
+                                                </div>
+                                                                                
+                                                <div class="form_row">
+                                                    
+                                                    <div class="label_col_1">
+                                                        <label>Должность</label>
+                                                    </div>
+                                                
+                                                    <div class="input_box1">
+                                                        <input type="text" placeholder="Менеджер">
+                                                    </div>
+                                                
+                                                </div>
+                                                                                
+                                                <div class="form_row">
+                                                    
+                                                    <div class="label_col_1">
+                                                        <label>Телефон</label>
+                                                    </div>
+                                                
+                                                    <div class="input_box1">
+                                                        <input type="tel" placeholder="+7 9510 696 564">
+                                                    </div>
+                                                
+                                                </div>
+                                                                                
+                                                <div class="form_row">
+                                                    
+                                                    <div class="label_col_1">
+                                                        <label>E-mail</label>
+                                                    </div>
+                                                
+                                                    <div class="input_box1">
+                                                        <input type="email" placeholder="info@mail.ru">
+                                                    </div>
+                                                
+                                                </div>
+                                                                                
+                                                <div class="form_row">
+                                                    
+                                                    <div class="label_col_1">
+                                                        <label>Адрес</label>
+                                                    </div>
+                                                
+                                                    <div class="input_box1">
+                                                        <input type="text" placeholder="Адрес">
+                                                    </div>
+                                                
+                                                </div>
+
+
+                                            </div>
+                                            
+                                            <!-- - - - - - - - - - - - - - End of Form Template - - - - - - - - - - - - - - - - -->
+
+                                            <div class="form_row button_row">
+
+                                                <div class="btn_plus add_form_btn alignright"><span class="icon_plus"><i class="fa fa-plus"></i></span>Добавить контакное лицо</div>
+                                            
+                                            </div>
+ 
+                                        </div>
+
+                                    </fieldset>
+
+                                    <fieldset>
+
+                                        <div class="form_block">
+                                        
+                                            <div class="form_row">
+                                                
+                                                <div class="label_col_1">
+                                                </div>
+
+                                                <div class="input_box1">
+                                                    <select data-placeholder='Выберите ГИП'>
+                                                        <option value=""></option>
+                                                        <option value="ГИП 1">ГИП 1</option>
+                                                        <option value="ГИП 2">ГИП 2</option>
+                                                        <option value="ГИП 3">ГИП 3</option>
+                                                        <option value="ГИП 4">ГИП 4</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+
+ 
+                                        </div>
+                                        
+                                    </fieldset>
+
+                                </div>
+
+                                
+                            </div>
+
+                            <div class="alignright">
+                                <button class="btn btn_green"><i class="fa fa-floppy-o" aria-hidden="true"></i>Сохранить и выдать проект</button>
+
+                                <div class="alignright">
+                                    <button class="btn btn_gray">Отменить</button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        
+                    
+
+                    </div>
+
+                </div>
+
+
+            
+
+
+            </main>
+            
+            <!-- - - - - - - - - - - - - - End of Content - - - - - - - - - - - - - - - - -->
+
+        </div>
+
+
+
+
+        <!-- Include Libs & Plugins
+        ============================================ -->
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+        <script type="text/javascript" src="plugins/jquery.matchHeight-min.js"></script>
+        <script type="text/javascript" src="plugins/FormStyler/jquery.formstyler.min.js"></script>
+
+
+        <!-- Theme files
+        ============================================ -->
+        <script src="js/script.core.js"></script>
+        <script src="js/script.plugins.js"></script>
+        
+    </body>
+</html>
